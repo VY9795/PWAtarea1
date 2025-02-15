@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eje06</title>
+    <style>
+
+        .caja {
+            width: 300px; 
+            height: 200px; 
+            background-color: #ffeb3b; 
+            border: 5px solid #ff9800; 
+            border-radius: 15px; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center; 
+            align-items: center; 
+            text-align: center; 
+            padding: 20px; 
+            margin: 50px auto; 
+        }
+
+       .caja h2 {
+            color: #333333; 
+            font-size: 24px; 
+            margin-bottom: 20px; 
+        }
+
+     
+        .caja input[type="range"] {
+            width: 80%; 
+            margin-top: 10px; 
+        }
+    </style>
+</head>
+<body>
+
+    <div class="caja">
+        <h2>¡Desliza!</h2>
+        <input type="range" min="0" max="100" value="50">
+    </div>
+
+</body>
+</html>

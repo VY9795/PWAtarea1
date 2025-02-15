@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eje10</title>
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+
+        header {
+            background-color: #2e8b57;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+
+        .contenedor {
+            display: flex;
+            flex: 1;
+        }
+
+
+        main {
+            flex: 3;
+            padding: 20px;
+            background-color: #f0f8ff; 
+        }
+
+        main h2 {
+            color: #2e8b57; 
+        }
+        aside {
+            flex: 1;
+            padding: 20px;
+            background-color: #e0f7fa; 
+        }
+
+        aside h3 {
+            color: #2e8b57; 
+        }
+
+
+        footer {
+            background-color: #333; 
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+
+        .galeria {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .galeria img {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+            margin: 10px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .galeria img:hover {
+            transform: scale(1.05); 
+        }
+
+
+        @media (max-width: 768px) {
+            .contenedor {
+                flex-direction: column;
+            }
+
+            aside {
+                order: -1; 
+            }
+
+            .galeria img {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+ 
+    <header>
+        <h1>Víctor Yance</h1>
+        <p>Estudiante de Ingeniería en Sistemas Inteligentes</p>
+    </header>
+
+  
+    <div class="contenedor">
+       
+        <main>
+            <h2>Biografía</h2>
+            <p>
+                ¡Hola! Mi nombre es Víctor Yance. Nací en Babahoyo y crecí en Babahoyo. Desde pequeño, siempre me han apasionado los animales. Actualmente estudio Ingeniería en Sistemas Inteligentes en la UBE.
+            </p>
+
+            <h2>Mis Pasatiempos</h2>
+            <div class="galeria">
+                <img src="Imágenes/Verseries.png" alt="series">
+                <img src="Imágenes/Videojuegos.png" alt="videojuegos">
+                <img src="Imágenes/Deportes.png" alt="Deportes">
+            </div>
+        </main>
+
+      
+        <aside>
+            <h3>Datos Personales</h3>
+            <ul>
+                <li><strong>Nombre:</strong> Víctor Yance</li>
+                <li><strong>Lugar de Nacimiento:</strong> Babahoyo</li>
+                <li><strong>Estudios:</strong> Ingeniería en Sistemas Inteligentes</li>
+                <li><strong>Pasatiempos:</strong> Animales, Programación, Deportes</li>
+            </ul>
+
+            <h3>Redes Sociales</h3>
+            <ul>
+                <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+                <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+            </ul>
+        </aside>
+    </div>
+
+   
+    <footer>
+        <p>&copy; 2023 Víctor Yance. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
